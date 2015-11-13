@@ -25,6 +25,17 @@ namespace Test.Business
             this.primeFactors = null;
         }
 
+        [TestMethod]
+        public void Calcular_los_factores_primos_de_2()
+        {
+            int input = 2;
 
+            List<int> expected = new List<int>(){2};
+
+            List<int> result = this.primeFactors.Calculate(input);
+
+            Assert.AreEqual(1, result.Count, "El numero de factores deberia ser 1");
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
