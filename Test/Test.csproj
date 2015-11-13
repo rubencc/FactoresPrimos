@@ -54,6 +54,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Business\PrimeFactorsTest.cs" />
     <Compile Include="Mocks\Infraestructure\BaseMock.cs" />
     <Compile Include="Mocks\Infraestructure\FactoryMock.cs" />
     <Compile Include="Mocks\Infraestructure\MockObject.cs" />
